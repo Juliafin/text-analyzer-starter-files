@@ -47,12 +47,7 @@ $('form#analyze-text').submit(function (e) {
   e.preventDefault();
 
   // think about data structures, used in calculations
-  var data = {
-    text: '',
-    plain_text: '',
-    sentences: [],
-    words: []
-  };
+  var data = {text: '', plain_text: '', sentences: [], words: []};
 
   // populate the data object
   data.text = $(this).find('textarea').first().val();
